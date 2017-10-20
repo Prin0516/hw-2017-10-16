@@ -8,8 +8,8 @@ import java.awt.event.ActionListener;
 public class LoginFrame extends JFrame {
     private JLabel jlbID=new JLabel("ID:");
     private JLabel jlbPW=new JLabel("Password:");
-    private JTextField jtf=new JTextField("h304");
-    private JPasswordField jpf=new JPasswordField("23323456");
+    private JTextField jtf=new JTextField();
+    private JPasswordField jpf=new JPasswordField();
     private JButton jbtnexit=new JButton("Exit");
     private JButton jbtngo=new JButton("Go");
     private int width=300,height=200,Swidth,Sheight;
