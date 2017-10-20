@@ -56,27 +56,26 @@ public class MainFrame extends JFrame {
                     break;
                 }
             }
-            if (repeat==true) {
+            if (repeat == true) {
                 i--;
                 continue;
             }
         }
-            jbtn[10]=new JButton(".");
-            jbtn[11]=new JButton("Clear");
-            jpl.add(jbtn[10]);
-            jpl.add(jbtn[11]);
+        jbtn[10] = new JButton(".");
+        jbtn[11] = new JButton("Clear");
+        jpl.add(jbtn[10]);
+        jpl.add(jbtn[11]);
         jbtn[10].addActionListener(new ActionListener() {
-        @Override
-        public void actionPerformed (ActionEvent e){
-            jtf.setText(jtf.getText()+".");
-        }
-    });
-    jbtn[11].addActionListener(new ActionListener() {
-        @Override
-        public void actionPerformed (ActionEvent e){
-           jtf.setText(jtf.getText()+".");
-        }
-    });
-
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jtf.setText(jtf.getText() + ".");
+            }
+        });
+        jbtn[11].addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jtf.setText("");
+            }
+        });
+    }
 }
-        }
